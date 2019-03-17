@@ -1,0 +1,15 @@
+#Config steps
+
+#tweepy
+conda install -c conda-forge tweepy
+
+#textblob
+conda install -c conda-forge textblob
+python -m textblob.download_corpora
+
+
+#Notes:
+``` 
+	If conda gives https/ssl errors, install openssl manually and att /bin to PATH.
+
+``` 
