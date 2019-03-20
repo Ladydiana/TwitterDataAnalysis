@@ -3,13 +3,17 @@
 
 import tweepy
 from tweepy import OAuthHandler
+import re
 
 
 #Keeping these a secret for the github repo
+'''
 CONSUMER_KEY = ''
 CONSUMER_SECRET = ''
 ACCESS_TOKEN = ''
 ACCESS_TOKEN_SECRET = ''
+'''
+
 
 
 # create OAuthHandler object
@@ -32,6 +36,7 @@ def _getTweets(query, count=500):
             tweet=tweet_info.retweeted_status.full_text
         else:
             tweet=tweet_info.full_text
+        tweet =  re.sub("[^A-Za-z]@:", " ", tweet)
         tweets.append(tweet)        
     
     return tweets
