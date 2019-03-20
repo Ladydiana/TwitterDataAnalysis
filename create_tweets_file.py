@@ -2,14 +2,14 @@
 """
 Created on Sun Mar 17 21:02:19 2019
 
-@author: Ballerina
+@author: Culincu Diana Cristina
 """
 
 from get_tweets_list import _getTweets
 
 tweets = []
-tweets = _getTweets(query = "PewDiePie", count = 100)
-target = open("Data_files/tweets_batch1.txt",  "a", encoding='utf-8')
+tweets = _getTweets(query = "PewDiePie", count = 500)
+target = open("Data_files/tweets_batch3_cleaned.txt",  "w", encoding='utf-8')
 
 for tweet in tweets:
     
