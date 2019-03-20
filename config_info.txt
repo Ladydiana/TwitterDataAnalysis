@@ -7,6 +7,14 @@ conda install -c conda-forge tweepy
 conda install -c conda-forge textblob
 python -m textblob.download_corpora
 
+#plt
+python -m pip install matplotlib
+
+#wordcloud
+python -m pip install wordcloud
+
+
+
 
 #Notes:
 ``` 
